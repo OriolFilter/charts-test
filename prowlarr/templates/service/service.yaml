@@ -1,0 +1,6 @@
+{{- include "common.service" (list . "prowlarr.service") -}}
+  
+{{- define "prowlarr.service" -}}
+# Add space
+{{- end -}}
+

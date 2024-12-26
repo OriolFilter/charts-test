@@ -43,6 +43,7 @@ spec:
     {{- end }}
 {{- end -}}
 {{- end -}}
+
 {{- define "common.ingress" -}}
 {{- include "common.util.merge" (append . "common.ingress.tpl") -}}
 {{- end -}}

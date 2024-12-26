@@ -4,5 +4,11 @@ image:
 config:
   mountPath: /config
 
+persistence:
+  enabled: true
+
+serviceAccount:
+  create: false
+
 service:
   containerPort: 9696

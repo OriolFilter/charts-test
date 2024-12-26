@@ -13,7 +13,7 @@ metadata:
 automountServiceAccountToken: {{ .Values.serviceAccount.automount }}
 {{- end -}}
 {{- end -}}
+
 {{- define "common.serviceaccount" -}}
 {{- include "common.util.merge" (append . "common.serviceaccount.tpl") -}}
 {{- end -}}
-
