@@ -3,3 +3,6 @@ image:
 
 service:
   containerPort: 80
+
+config:
+  mountPath: /config
