@@ -1,0 +1,4 @@
+{{- include "common.deployment" (list . "prowlarr.deployment") -}}
+{{- define "prowlarr.deployment" -}}
+# Add space
+{{- end -}}

@@ -1,0 +1,8 @@
+{{- include "template.configmap" (list . "test.configmap") -}}
+{{- define "test.configmap" -}}
+
+metadata:
+  name: pinochio
+  labels:
+    name: f
+{{- end -}}
