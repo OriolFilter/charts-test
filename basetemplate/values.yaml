@@ -1,0 +1,5 @@
+image:
+  repository: nginx
+
+service:
+  containerPort: 80
