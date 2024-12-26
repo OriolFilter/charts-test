@@ -54,7 +54,7 @@ spec:
           volumeMounts:
             {{- toYaml . | nindent 12 }}
             - name: config
-              mountPath: /config
+              mountPath: / {{- .Values.config.mountPath }}
           {{- end }}
       volumes:
         - name: config

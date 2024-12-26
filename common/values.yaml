@@ -128,7 +128,7 @@ exports:
     affinity: {}
 
     config:
-      mountPath: "/config" # Directory used to mount the config/main volume
+      mountPath: # Directory used to mount the config/main volume
 
     persistence:
       enabled: false # Whether or not create a PVC, omitted if existingClaim is specified

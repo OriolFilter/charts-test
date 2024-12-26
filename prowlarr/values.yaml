@@ -1,2 +1,8 @@
 image:
   repository: lscr.io/linuxserver/prowlarr
+
+serviceAccount:
+  create: false
+
+config:
+  mountPath: /config

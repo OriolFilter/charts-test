@@ -5,7 +5,7 @@ metadata:
   name: {{ include "common.serviceAccountName" . }}
   labels:
     {{- include "common.labels" . | nindent 4 }}
-  {{- with .Values.serviceAccount.annotations }}
+  {{- with .Values.serviceAccountt.annotations }}
   annotations:
     {{- toYaml . | nindent 4 }}
   {{- end }}
