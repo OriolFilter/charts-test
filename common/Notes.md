@@ -18,6 +18,7 @@ dependencies:
 
 Create files such as the following, where the *new* chart is responsible on controlling weather the objects will be created or not. (for now). 
 
+The metadata.labels.  etc  is an example of merging the base template with additional values.
 ```yaml
 # templates/serviceaccount.yaml
 {{- include "common.serviceaccount" (list . "prowlarr.serviceaccount") -}}

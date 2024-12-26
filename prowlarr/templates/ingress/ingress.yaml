@@ -1,0 +1,8 @@
+{{ if .Values.ingress.create }}
+{{- include "common.ingress" (list . "prowlarr.ingress") -}}
+{{- end -}}
+  
+{{- define "prowlarr.ingress" -}}
+# Add space
+{{- end -}}
+
