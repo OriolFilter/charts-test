@@ -1,8 +1,11 @@
 image:
-  repository: nginx
+  repository: lscr.io/linuxserver/prowlarr
 
 service:
   containerPort: 9696
+
+config:
+  mountPath: /config
 
 persistence:
   enabled: true

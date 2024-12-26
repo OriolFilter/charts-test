@@ -39,7 +39,7 @@ spec:
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:
             - name: http- {{- .Values.service.port }}
-              containerPort: {{ .Values.service.port }} ## ?? TODO
+              containerPort: {{ .Values.service.containerPort }} ## ?? TODO
               protocol: TCP
           {{/*
           # No idea how to make it work with the "first run" were the pod creates the SQLi Datacommon.
@@ -50,11 +50,11 @@ spec:
           */}}
           resources:
             {{- toYaml .Values.resources | nindent 12 }}
-          {{- with .Values.volumeMounts }}
           volumeMounts:
-            {{- toYaml . | nindent 12 }}
             - name: config
-              mountPath: / {{- .Values.config.mountPath }}
+              mountPath: {{ .Values.config.mountPath }}
+          {{- with .Values.volumeMounts }}
+            {{- toYaml . | nindent 12 }}
           {{- end }}
       volumes:
         - name: config

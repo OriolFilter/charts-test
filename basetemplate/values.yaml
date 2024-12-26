@@ -6,3 +6,9 @@ service:
 
 config:
   mountPath: /config
+
+persistence:
+  enabled: false
+
+serviceAccount:
+  create: false
