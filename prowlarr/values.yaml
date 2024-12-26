@@ -1,11 +1,2 @@
 image:
   repository: lscr.io/linuxserver/prowlarr
-
-serviceAccount:
-  create: true
-
-autoscaling:
-  enabled: false
-
-persistence:
-  enabled: false
