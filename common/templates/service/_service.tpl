@@ -2,9 +2,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "base.fullname" . }}
+  name: {{ include "common.fullname" . }}
   labels:
-    {{- include "base.labels" . | nindent 4 }}
+    {{- include "common.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -13,7 +13,7 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "base.selectorLabels" . | nindent 4 }}
+    {{- include "common.selectorLabels" . | nindent 4 }}
 {{- end -}}
 
 {{- define "common.service" -}}
