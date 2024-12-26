@@ -4,7 +4,7 @@
 apiVersion: v1
 kind: PersistentVolumeClaim
 metadata:
-  name: {{ include "common.provisionedPvcName" . }}
+  name: {{ .Release.Name }}
   labels:
     {{- include "common.labels" . | nindent 4 }}
 spec:
