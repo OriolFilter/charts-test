@@ -1,0 +1,12 @@
+image:
+  repository: nginx
+
+service:
+  containerPort: 9696
+
+persistence:
+  enabled: true
+
+serviceAccount:
+  create: false
+
