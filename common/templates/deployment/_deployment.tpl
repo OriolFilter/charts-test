@@ -64,14 +64,12 @@ spec:
       volumes:
         - name: config
       {{- if and (not .Values.persistence.enabled) (not .Values.persistence.existingClaim) }}
-          emptyDir:
-            sizeLimit: 500Mi
+          emptyDir: {}
       {{- else if .Values.persistence.existingClaim }}
           persistentVolumeClaim:
             claimName: {{ .Values.persistence.existingClaim }}
       {{- else }}
           ## Generate PVC
-          ## TODO
           persistentVolumeClaim:
             claimName: {{ include "common.provisionedPvcName" . }}
       {{- end }}
