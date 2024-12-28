@@ -2,7 +2,7 @@ image:
   repository: lscr.io/linuxserver/qbittorrent
 
 service:
-  containerPort: 80
+  containerPort: 8080
 
 config:
   mountPath: /config
