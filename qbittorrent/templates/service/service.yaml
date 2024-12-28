@@ -1,0 +1,6 @@
+{{- include "common.service" (list . "basetemplate.service") -}}
+  
+{{- define "basetemplate.service" -}}
+# Add space
+{{- end -}}
+

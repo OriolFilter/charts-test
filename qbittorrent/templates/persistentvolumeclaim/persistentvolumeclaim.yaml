@@ -1,0 +1,7 @@
+{{ if .Values.persistence.enabled }}
+{{- include "common.persistentvolumeclaim" (list . "basetemplate.persistentvolumeclaim") -}}
+{{- end -}}
+
+{{- define "basetemplate.persistentvolumeclaim" -}}
+# Add space
+{{- end -}}
