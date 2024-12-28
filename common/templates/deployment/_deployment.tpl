@@ -57,6 +57,8 @@ spec:
             {{- toYaml . | nindent 12 }}
           {{- end }}
           env:
+          - name: TZ
+            value: {{ .Values.TZ | quote }}
           {{- with .Values.env }}
             {{- toYaml . | nindent 12 }}
           {{- end }}

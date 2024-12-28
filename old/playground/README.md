@@ -23,6 +23,8 @@ https://stackoverflow.com/questions/76954247/define-a-default-values-yaml-file-i
 
 https://github.com/companyinfo/helm-charts/blob/main/charts/helmet/values.yaml
 
+https://kubernetes.io/docs/reference/generated/kubernetes-api/v1.26/#securitycontext-v1-core
+
 # TODO
 
 ## Container port(s)

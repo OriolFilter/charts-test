@@ -51,6 +51,8 @@ exports:
       # runAsNonRoot: true
       # runAsUser: 1000
 
+    TZ: "Europe/Madrid"
+
     env: []
     #  - name: PUID
     #    value: "1000"
