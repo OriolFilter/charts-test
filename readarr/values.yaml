@@ -1,0 +1,20 @@
+image:
+  repository: lscr.io/linuxserver/readarr
+
+service:
+  containerPort: 8787
+
+config:
+  mountPath: /config
+
+persistence:
+  enabled: false
+
+serviceAccount:
+  create: false
+
+env:
+  - name: PUID
+    value: "1000"
+  - name: PGID
+    value: "1000"
