@@ -1,0 +1,5 @@
+{{- include "common.deployment" (list . "basetemplate.deployment") -}}
+
+{{- define "basetemplate.deployment" -}}
+# Add space
+{{- end -}}

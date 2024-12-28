@@ -1,0 +1,20 @@
+image:
+  repository: lscr.io/linuxserver/bazarr
+
+service:
+  containerPort: 6767
+
+config:
+  mountPath: /config
+
+persistence:
+  enabled: false
+
+serviceAccount:
+  create: false
+
+env:
+  - name: PUID
+    value: "1000"
+  - name: PGID
+    value: "1000"
