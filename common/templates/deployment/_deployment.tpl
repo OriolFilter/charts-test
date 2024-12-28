@@ -56,6 +56,11 @@ spec:
           {{- with .Values.volumeMounts }}
             {{- toYaml . | nindent 12 }}
           {{- end }}
+          env:
+          {{- with .Values.env }}
+            {{- toYaml . | nindent 12 }}
+          {{- end }}
+
       volumes:
         - name: config
       {{- if and (not .Values.persistence.enabled) (not .Values.persistence.existingClaim) }}

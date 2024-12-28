@@ -13,3 +13,8 @@ persistence:
 serviceAccount:
   create: false
 
+env:
+  - name: PUID
+    value: "1000"
+  - name: GUID
+    value: "1000"
