@@ -1,5 +1,5 @@
 image:
-  repository: ghcr.io/linuxserver/qbittorrent
+  repository: lscr.io/linuxserver/qbittorrent
 
 service:
   containerPort: 80
