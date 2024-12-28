@@ -8,7 +8,7 @@ config:
   mountPath: /config
 
 persistence:
-  enabled: true
+  enabled: false
 
 serviceAccount:
   create: false
