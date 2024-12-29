@@ -4,7 +4,7 @@ helm dependency update sonarr && \
 helm dependency update radarr && \
 helm dependency update bazarr && \
 helm dependency update readarr && \
-helm install qbittorrent qbittorrent/ --debug --dry-run
+helm install readarr readarr/ --debug --dry-run
 
 #helm dependency update basetemplate && \
 #helm install basetemplate basetemplate/ --debug --dry-run
