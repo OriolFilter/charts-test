@@ -1,0 +1,15 @@
+image:
+  repository: ghcr.io/flaresolverr/flaresolverr
+
+service:
+  containerPort: 8191
+
+env:
+  - name: LOG_LEVEL
+    value: info
+
+config:
+  mountPath: /config
+
+serviceAccount:
+  create: false
